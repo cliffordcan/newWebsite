@@ -1,0 +1,227 @@
+/* COLORS */
+html {
+  font-size: 12px; 
+
+  }
+
+body {
+  padding-top: 115px;
+  font-size: 1.4em; 
+  font-family: 'Titillium Web', sans-serif;
+  }
+  
+  h1 {
+	color: #004271;
+  }
+
+.navbar-header button {
+  background: #004271; }
+  .navbar-header button span.icon-bar {
+    background: #fff; }
+
+.dropdown-menu {
+    font-size: 1.1em;
+}
+
+	
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px; 
+  font-family: 'Titillium Web', sans-serif;
+  }
+  
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  margin-top: -45px;
+/* background: url(../images/pattern.png); 
+background-size: cover; */ }
+  .jumbotron h1 {
+    font-size: 2.1em;
+	font-family: 'Titillium Web', sans-serif;
+    font-style: none;
+    color: #004271; }
+  .jumbotron .btn {
+    margin-top: 10px; }
+
+/* Customize the nav-justified links to be fill the entire space of the .navbar */
+.nav-justified {
+  background: #fff;
+box-shadow: 0 10px 15px grey; }
+
+  .nav-justified > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    font-weight: bold;
+    color: #777;
+    text-align: center; }
+
+div.row {
+  margin-bottom: 10px; }
+  div.row.tiles {
+    margin-top: 75px; }
+    div.row.tiles img {
+      width: 200px; }
+    div.row.tiles img.img_fit {
+      width: 100%; }
+  div.row img.img_fit {
+    width: 100%; }
+  div.row div {
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 1.1em; }
+    div.row div .btn {
+      padding-top: 10px; }
+    div.row div.testimonial {
+      background-color: #eaeaea;
+       }
+    div.row div.contact, div.row div .form-group {
+      padding: 10px 0;
+      margin: 0; }
+    div.row div ul.tiled {
+      list-style-position: inside;
+      margin: 0;
+      padding: 0 0 20px;
+      color: #004271; }
+      div.row div ul.tiled li {
+        padding-top: 5px; }
+
+#carousel-home {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 853px;
+  }
+  
+.scholarship{
+	color: blue;
+}
+  
+iframe{
+	width: 100%;
+	height: 480px;
+	max-width: 853px;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4); }
+
+footer .row {
+  background: #eaeaea; }
+footer .banner {
+  background-image: url(../images/Homepage_Banner_Picture.png);
+  background-size: cover;
+  padding: 30px; }
+footer .footer_nav {
+  font-size: .8em;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0; }
+  footer .footer_nav li {
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 10px; }
+    footer .footer_nav li:hover {
+      text-decoration: none; }
+
+body.stories div.row div.img1 {
+  background: url(../images/Testimonials%201.png); }
+body.stories div.row div.img2 {
+  background: url(../images/Testimonials%202.png); }
+body.stories div.row div.img3 {
+  background: url(../images/Testimonials%203.png); }
+body.stories div.row div.img4 {
+  background: url(../images/Testimonials%204.png); }
+body.stories div.row div.img5 {
+  background: url(../images/Testimonials%205.png); }
+body.stories div.row div.img6 {
+  background: url(../images/Testimonials%206.png); }
+body.stories div.row div.img7 {
+  background: url(../images/Testimonials%207.png); }
+body.stories div.row div.img1, body.stories div.row div.img2, body.stories div.row div.img3, body.stories div.row div.img4, body.stories div.row div.img5, body.stories div.row div.img6, body.stories div.row div.img7 {
+  background-size: cover; }
+body.stories div.row div blockquote {
+  background: rgba(255, 255, 255, 0.7);
+  margin: 150px 10px 10px; }
+
+.contact {
+  background: #eaeaea; }
+
+.your-class img {
+  max-width: 100%; }
+
+blockquote {
+  font-style: italic;
+  border-width: 0; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.img_fit {
+  max-width: 100%; }
+  
+  .panel-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.panel-body {
+	font-size: 1.3em;
+}
+
+.container {
+    width: 90%;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .masthead,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0; } 
+
+	
+	
+	}
+@media (max-width: 768px) {
+  body {
+	  padding-top: 50px;
+	  margin-top: 0;
+	  }
+   #first {
+	   padding-top: 0px;
+	   margin-top: -50px;
+   }
+   footer .footer_nav {
+	   font-size: 1em;
+   }
+   .jumbotron h1 {
+	   font-size: 1.1em;
+   }
+   .jumbotron, div.row div, div.row.tiles {
+	   margin: 0;
+	   padding-top: 10px;
+	   padding: 0 15px;
+   }
+   
+  
+}
+	
+	
+	
+	
+	
+.tech_academy {
+  height: 75px; }
+
+ a.btn-lg {
+	 font-size: 1.4em;
+ }

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<post>
+  <author>erikg</author>
+  <title>Lessons learned setting up our own web server</title>
+  <description>Recently we decided to pull all the various web sites and web applications we have for The Tech Acad</description>
+  <content>&lt;p&gt;Recently we decided to pull all the various web sites and web applications we have for The Tech Academy all under one roof. With at least twenty industry sites, a blog and an online Learning Management System out there, all on different platforms, it was becoming a challenge [more] to manage.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We learned a number of valuable lessons along the way, and since some of the useful things we picked up aren't all that easy to find on the interwebs, we wanted to document them so that perhaps you might not have to go through what we did :)&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</content>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <iscommentsenabled>True</iscommentsenabled>
+  <pubDate>2015-09-14 16:49:00</pubDate>
+  <lastModified>2015-09-14 23:55:03</lastModified>
+  <raters>0</raters>
+  <rating>0</rating>
+  <slug>lessons-learned-setting-up-our-own-web-server</slug>
+  <tags />
+  <comments />
+  <categories />
+  <notifications />
+</post>

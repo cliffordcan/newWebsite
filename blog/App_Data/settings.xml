@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <description>Dispatches from the front lines of the software developer boot camp world</description>
+  <commentblacklistcount>3</commentblacklistcount>
+  <commentsperpage>10</commentsperpage>
+  <numberofrecentcomments>10</numberofrecentcomments>
+  <theme>Standard</theme>
+  <geocodinglongitude>0</geocodinglongitude>
+  <enablerating>True</enablerating>
+  <themecookiename>theme</themecookiename>
+  <trustauthenticatedusers>True</trustauthenticatedusers>
+  <moderationtype>Auto</moderationtype>
+  <enablerecaptchaoncontactform>False</enablerecaptchaoncontactform>
+  <culture>Auto</culture>
+  <compresswebresource>False</compresswebresource>
+  <searchcommentlabeltext>Include comments in search</searchcommentlabeltext>
+  <timestamppostlinks>False</timestamppostlinks>
+  <emailsubjectprefix>Weblog</emailsubjectprefix>
+  <enablewebsiteincomments>False</enablewebsiteincomments>
+  <selfregistrationinitialrole>Editors</selfregistrationinitialrole>
+  <showdescriptioninpostlistforpostsbytagorcategory>False</showdescriptioninpostlistforpostsbytagorcategory>
+  <postsperfeed>3</postsperfeed>
+  <useblognameinpagetitles>True</useblognameinpagetitles>
+  <enabletrackbacksend>True</enabletrackbacksend>
+  <descriptioncharacters>300</descriptioncharacters>
+  <blockauthoroncommentdelete>False</blockauthoroncommentdelete>
+  <customfrontpage />
+  <iscocommentenabled>False</iscocommentenabled>
+  <smtpusername>username</smtpusername>
+  <alternatefeedurl />
+  <language>en-US</language>
+  <enablecontactattachments>True</enablecontactattachments>
+  <showincludecommentsoption>False</showincludecommentsoption>
+  <sendmailoncomment>True</sendmailoncomment>
+  <createblogonselfregistration>False</createblogonselfregistration>
+  <numberofrecentposts>10</numberofrecentposts>
+  <enablecommentsmoderation>True</enablecommentsmoderation>
+  <commentreportmistakes>False</commentreportmistakes>
+  <requiresslmetaweblogapi>False</requiresslmetaweblogapi>
+  <enablessl>False</enablessl>
+  <allowservertodownloadremotefiles>True</allowservertodownloadremotefiles>
+  <israzortheme>False</israzortheme>
+  <blogrollvisibleposts>3</blogrollvisibleposts>
+  <iscommentsenabled>True</iscommentsenabled>
+  <thumbnailserviceapi>http://www.robothumb.com/src/?url={0}</thumbnailserviceapi>
+  <descriptioncharactersforpostsbytagorcategory>0</descriptioncharactersforpostsbytagorcategory>
+  <displaycommentsonrecentposts>True</displaycommentsonrecentposts>
+  <disqusdevmode>False</disqusdevmode>
+  <enableenclosures>False</enableenclosures>
+  <timezone>0</timezone>
+  <email>name@example.com</email>
+  <feedauthor>erik.d.gross@gmail.com</feedauthor>
+  <enablecountryincomments>False</enablecountryincomments>
+  <errortext>
+    This one's down to me! Please accept my apologies for this - I'll see to it that the developer responsible for this happening is given 20 lashes (but only after he or she has fixed this problem).
+  </errortext>
+  <remotefiledownloadtimeout>30000</remotefiledownloadtimeout>
+  <enableselfregistration>False</enableselfregistration>
+  <securityvalidationkey>ede308e723ae42aab289b04350133355accaa0f0da9743e7a8529a0cbbf5bceee5bcafc4eac741f68d2d63d80e21bf8e</securityvalidationkey>
+  <remotemaxfilesize>524288</remotemaxfilesize>
+  <enabletrackbackreceive>True</enabletrackbackreceive>
+  <enabletagexport>True</enabletagexport>
+  <enablecommentsearch>True</enablecommentsearch>
+  <contactformmessage>&lt;p&gt;I'll answer the mail as soon as I can.&lt;/p&gt;</contactformmessage>
+  <postsperpage>10</postsperpage>
+  <showlivepreview>True</showlivepreview>
+  <showpostnavigation>True</showpostnavigation>
+  <errortitle>Ooops! An unexpected error has occurred.</errortitle>
+  <disqusaddcommentstopages>False</disqusaddcommentstopages>
+  <blogrollmaxlength>23</blogrollmaxlength>
+  <enableopensearch>True</enableopensearch>
+  <syndicationformat>Rss</syndicationformat>
+  <commentwhitelistcount>2</commentwhitelistcount>
+  <displayratingsonrecentposts>True</displayratingsonrecentposts>
+  <dayscommentsareenabled>0</dayscommentsareenabled>
+  <enablerelatedposts>True</enablerelatedposts>
+  <removeextensionsfromurls>True</removeextensionsfromurls>
+  <enablequicknotes>True</enablequicknotes>
+  <authorname>erikg</authorname>
+  <trackingscript />
+  <redirecttoremovefileextension>False</redirecttoremovefileextension>
+  <numberofreferrerdays>1</numberofreferrerdays>
+  <addiptowhitelistfilteronapproval>False</addiptowhitelistfilteronapproval>
+  <searchbuttontext>Search</searchbuttontext>
+  <enableoptimization>False</enableoptimization>
+  <avatar>wavatar</avatar>
+  <mobiletheme>Standard</mobiletheme>
+  <enablepingbacksend>True</enablepingbacksend>
+  <htmlheader />
+  <galleryfeedurl>http://dnbe.net/v01/nuget</galleryfeedurl>
+  <enablepingbackreceive>True</enablepingbackreceive>
+  <showdescriptioninpostlist>False</showdescriptioninpostlist>
+  <contacterrormessage>&lt;p&gt;This form does not work at the moment. Sorry for the inconvenience.&lt;/p&gt;</contacterrormessage>
+  <endorsement>http://www.dotnetblogengine.net/syndication.axd</endorsement>
+  <enablepasswordreset>True</enablepasswordreset>
+  <smtpserverport>25</smtpserverport>
+  <searchdefaulttext>Enter search term</searchdefaulttext>
+  <smtpserver>mail.example.com</smtpserver>
+  <name>Tech Academy Blog</name>
+  <geocodinglatitude>0</geocodinglatitude>
+  <handlewwwsubdomain />
+  <contactthankmessage>&lt;h1&gt;Thank you&lt;/h1&gt;&lt;p&gt;The message was sent.&lt;/p&gt;</contactthankmessage>
+  <disquswebsitename />
+  <addiptoblacklistfilteronrejection>False</addiptoblacklistfilteronrejection>
+  <enablereferrertracking>False</enablereferrertracking>
+  <enablehttpcompression>False</enablehttpcompression>
+  <enableerrorlogging>True</enableerrorlogging>
+  <iscommentnestingenabled>True</iscommentnestingenabled>
+  <smtppassword>password</smtppassword>
+  <blogrollupdateminutes>60</blogrollupdateminutes>
+</settings>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>About us</title>
+  <description>Erik Gross and Jack Stanley are the founders of The Tech Academy, a successful software developer tr</description>
+  <content>&lt;p&gt;Erik Gross and Jack Stanley are the founders of The Tech Academy, a successful software developer training school headquartered in Portland, Oregon.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</content>
+  <keywords />
+  <slug>example-page</slug>
+  <parent>00000000-0000-0000-0000-000000000000</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <sortorder>0</sortorder>
+  <datecreated>2013-12-27 22:12:00</datecreated>
+  <datemodified>2015-09-14 23:59:22</datemodified>
+</page>

@@ -1,0 +1,103 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Montserrat);
+body {
+	background: url('../images/backgroundImage.png') #020d1c no-repeat top center;
+	margin: 0;
+    background-size: 100%;
+    overflow-y: scroll;
+    background-position: 0px 247px;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.blogTitle a{
+    font-family: 'Montserrat', sans-serif;
+    color: #004271 !important;
+}
+.navbar-toggle{
+	background-color:dimgray;
+}
+.navbar-inverse {
+    background-color: #fff !important; 
+	padding:25px 25px 0;
+	color: #004271 !important;
+    border-color: #fff !important;
+    border-bottom: 1px solid #080808 !important;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    margin:20px 0 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: #004271 !important;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: rgb(3, 86, 146) !important;
+}
+.navbar-header{
+    margin-bottom:30px;
+}
+.navbar-brand{
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar .navbar-inverse .navbar-fixed-top{
+	margin-bottom: 0px !important;
+}
+.nav .navbar-nav{
+	color: #004271;
+    text-decoration: none;
+    line-height: 78px;
+    padding: 32px 15px 32px 15px;
+    font-size: 15px;
+}
+.header .nav > li{
+    border-bottom:0px solid #fff;
+}
+
+.footer .widgets-footer .widget .widget-header{
+    border-color:azure
+}
+#footerSection {
+    padding-top:40px;
+    background: #012A4A !important;
+    color:#639FA9;
+    font-size: 14px;
+    min-height:125px;
+}
+#footerNav a, #footerNav .credit{
+    color:#639FA9 !important;
+}
+.logoFooter{
+
+}
+.credit{
+    display:inline-block
+}
+/* Main body comments post styles */
+.post-title a, #calendarContainer a, .calendar tbody tr td a{
+    color: #004271;
+    font-weight: bold;
+}
+p > a, a{
+    color: #004271 !important;
+}
+a:hover{
+    text-decoration: underline;
+}
+.search input[type=button], div input[type=submit], .form-group input[type=button]{
+    background-color:#004271;
+    border-color: #004271;
+}
+.recentPosts a:hover{
+    text-decoration:underline;
+}
+#newsletterform input, #newsletterform p input{
+    width:100% !important;
+}
+@media(max-width:768px){
+    .navbar-brand{
+        width:auto;
+    }
+}
