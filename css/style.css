@@ -30,6 +30,15 @@ body {
   font-family: 'Titillium Web', sans-serif;
   }
   
+  /* Hide google plus thing */
+.googleplus {
+  display: none !important;
+  }
+  
+#rights {
+	Position: relative;
+	float: bottom;
+}
 
 /* Main marketing message and sign up button */
 .jumbotron {
@@ -176,7 +185,7 @@ blockquote {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
 }
 
 /* Responsive: Portrait tablets and up */
