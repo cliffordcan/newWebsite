@@ -225,3 +225,14 @@ blockquote {
  a.btn-lg {
 	 font-size: 1.4em;
  }
+ 
+ 
+#coverPic {
+	width: 100%;
+	position: absolute;
+	margin: 0 auto;
+	left: 0px;
+	top: 0;
+	z-index: 1000;	
+	
+}
