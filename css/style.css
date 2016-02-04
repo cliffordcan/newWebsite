@@ -25,8 +25,6 @@ body {
 
 	
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px; 
   font-family: 'Titillium Web', sans-serif;
   }
   
@@ -36,8 +34,74 @@ body {
   }
   
 #rights {
-	Position: relative;
-	float: bottom;
+	font-size: 0.8em !important;
+	text-align: center !important;
+	width: 100% !important;
+	position: block !important;
+	float: bottom !important;
+	color: white !important;
+}
+
+#footSocial{
+	text-align: left !important;
+	width: 66% !important;
+	height: 100px !important;
+	float: left !important;
+	position: block !important;
+}
+
+#footSocial a {
+	margin-left: 75px;
+	width: 50px !important;
+	height: 50px !important;
+	text-align: center !important;
+	color: white !important;
+	display: inline-block !important;
+	font-size: 2em !important;
+	text-decoration:none;
+}
+
+#twitter:hover {
+	color: #00aced !important;
+}
+
+#facebook:hover {
+	color: #3b5998 !important;
+}
+
+#linkedin:hover {
+	color: #007bb6 !important;
+}
+
+#instagram:hover {
+	color: #517fa4 !important;
+}
+
+#footAddress {
+	text-align: left !important;
+	width: 33% !important;
+	height: 150px !important;
+	float: left !important;
+	position: block !important;
+	color: white !important;
+}
+
+#footEmail {
+	text-align: left !important;
+	width: 33% !important;
+	height: 50px !important;
+	float: left !important;
+	position: block !important;
+	color: white !important;
+}
+
+#footPhone {
+	text-align: left !important;
+	width: 33% !important;
+	height: 50px !important;
+	float: left !important;
+	position: block !important;
+	color: white !important;
 }
 
 /* Main marketing message and sign up button */
@@ -68,8 +132,8 @@ box-shadow: 0 10px 15px grey; }
     color: #777;
     text-align: center; }
 
-div.row {
-  margin-bottom: 10px; }
+/*div.row {
+  margin-bottom: 10px; } */
   div.row.tiles {
     margin-top: 75px; }
     div.row.tiles img {
@@ -119,23 +183,35 @@ iframe{
   background: rgba(0, 0, 0, 0.4); }
 
 footer .row {
-  background: #eaeaea; }
-footer .banner {
-  background-image: url(../images/Homepage_Banner_Picture.png);
-  background-size: cover;
-  padding: 30px; }
+  background: #eaeaea; 
+  }
+
 footer .footer_nav {
   font-size: .8em;
   list-style-type: none;
   list-style-position: inside;
   margin: 0;
-  padding: 0; }
-  footer .footer_nav li {
+  padding: 0; 
+  font-weight: bold;
+  color: white;
+  }
+  
+  footer .footer_nav li  {
     font-size: 1.2em;
     display: inline-block;
-    padding: 10px; }
-    footer .footer_nav li:hover {
-      text-decoration: none; }
+    padding: 10px;
+}
+
+footer .footer_nav a {
+	font-weight: bold;
+	color: white;
+	text-decoration:none;
+}
+
+footer .footer_nav a:hover {
+	color: #D98D2A;
+}
+
 
 body.stories div.row div.img1 {
   background: url(../images/Testimonials%201.png); }
