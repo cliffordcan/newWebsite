@@ -352,6 +352,15 @@ blockquote {
 .tech_academy {
   height: 75px; }
 
+.modal-button-yes{
+    border: medium;
+}
+
+.modal-button-no {
+    border: medium;
+}
+
+
  a.btn-lg {
 /*	 font-size: 1.4em;
      border: hidden;*/
@@ -432,7 +441,7 @@ a.btn-lg:active
 #dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
 
 .modal-body{
-	height: 200px;
+	height: 150px;
 }
 
 #coverPic {

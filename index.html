@@ -81,7 +81,7 @@
                         <li><a href="bootcamp.html">Bootcamp</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
                         <li class="hidden-md hidden-sm hidden-xs">
-                            <a href="index.html"><img src="images/Tech_Academy_Logo.png" class="tech_academy"/></a>
+                            <a href="index.html"><img src="images/Tech_Academy_Logo - Transparent.png" class="tech_academy"/></a>
                         </li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="staff.html">Staff</a></li>
@@ -104,7 +104,7 @@
                         <br />
                         <br />
                         <p>“I would like to extend a most gracious ‘thank you’ to each and every one of the staff and all of the student body for making my time at the Tech Academy full of meaningful interactions, immersive conversations, inventive challenges, and a lot of memories and knowledge that I will carry with me into my new career in Colorado."</p>
-                        <p><a class="btn btn-lg btn-primary" href="testimonials.html#cole" role="button">Read More »</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="testimonials.html" role="button">Read More »</a></p>
                     </td>
                     <td class="newTiledInfoWhite">	<!--  Jumbotron  -->
 				        <div class="jumbotron">
@@ -216,37 +216,25 @@
                 </tr>
             </table>
         </div>
-<div id="myModal" class="modal fade" role="dialog">
-	<div class="modal-dialog">
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Hi there!</h4>
-			</div>
-			<div class="modal-body">
-				<p>Would you like to have The Tech Academy contact you?</p>
-				<label  class="col-sm-2 control-label" for="inputName">Name</label>
-				<div class="col-sm-10">
-					<input type="name" class="form-control" id="inputName" placeholder="Name"/>
-				</div>
-				<label  class="col-sm-2 control-label" for="inputEmail">Email</label>
-				<div class="col-sm-10">
-					<input type="email" class="form-control" id="inputEmail" placeholder="Email"/>
-				</div>
-				<label  class="col-sm-2 control-label" for="inputPhone">Phone</label>
-				<div class="col-sm-10">
-					<input type="phone" class="form-control" id="inputPhone" placeholder="Phone Number"/>
-				</div>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Yes please contact me!</button>
-				<button type="button" class="btn btn-default" data-dismiss="modal">No thank you</button>
-			</div>
-		</div>
-	</div>
-</div>
-
+    </div><!-- end container -->
+    <div id="myModalPopUp" class="modal fade" role="dialog"> <!-- modal dialog box -->
+	    <div class="modal-dialog">
+		    <!-- Modal content-->
+		    <div class="modal-content">
+			    <div class="modal-header">
+				    <button type="button" class="close" data-dismiss="modal">&times;</button>
+				    <h3 class="modal-title">Hi there!</h3>
+			    </div>
+			    <div class="modal-body">
+				    <p>Would you like to learn more about The Tech Academy?</p>
+			    </div>
+			    <div class="modal-footer">
+                    <a class="btn modal-button-yes" href="contact.html">Yes, please contact me!</a>
+                    <a class="btn" data-dismiss="modal">No, thank you</a>
+			    </div>
+		    </div>
+	    </div>
+    </div>
         <!--  Site footer  -->
         <footer class="footer">
 			
@@ -331,58 +319,32 @@
     <script type="text/javascript" src="js/npm.js"></script>
 	<script>
 	    $(document).ready(function () {
-	        function dontGiveMePopup() { /* nothing to return */ }
-		    $( ".text-center" ).scrollTop( 0 );
+//	        function dontGiveMePopup() {
+//	            /* nothing to return */
+//	        }
+//	        window.onbeforeunload = function () {
+//	            window.setTimeout(function () { // escape function context
+//	                window.location = 'contact.html';
+//	            }, 0);
+//	            window.onbeforeunload = null;   // necessary to prevent infinite loop that kills the browser
+///
+//	            //return 'Would you like to learn more about The Tech Academy?';
+//	            // pressing leave will still leave, but the GET may be fired first anyway
+//	        }
+	        function waitThenDoSomething(waitTimeInMS, myAction) {
+	            setTimeout(function () {
+	                if (myAction == "displayPopup") {
+	                    $('#myModalPopUp').modal('show');
+	                }
+	            }, waitTimeInMS); //time in ms to wait before modal dialog box shows up.
+	        }
+	        waitThenDoSomething(60000, "displayPopup"); //this function waits 60000milliseconds before displaying a popup.
+	        $("a").click(function () { window.onbeforeunload = dontGiveMePopup; }); //don't make popup appear just because user clicked our site's hyperlink.
+	        $(".text-center").scrollTop(0);
 		    $(".container").hide();
 		    $(".container").fadeIn(4000);
 		    $("#coverPic").fadeOut(4000);
-		    $( ".text-center" ).scrollTop( 0 );
-	        //window.onbeforeunload = GiveMePopup;
-		    window.onbeforeunload = function () {
-		        window.setTimeout(function () { // escape function context
-		            window.location = 'contact.html';
-		        }, 0);
-		        window.onbeforeunload = null;   // necessary to prevent infinite loop
-		        // that kills your browser
-		        return 'Would you like to learn more about The Tech Academy?';
-		        // pressing leave will still leave, but the GET may be fired first anyway
-		    }
-		    $("a").click(function () { window.onbeforeunload = dontGiveMePopup; });
+		    $(".text-center").scrollTop(0);
 	    });
-	</script>
-
-	<script>
-
-	//function GiveMePopup() {  $('#myModal').modal('show'); }
-	//	function GiveMePopup() { 
-	//		var x = document.location.href;
-	//		document.getElementById("demo").innerHTML = x;
-	//		return "Would you like to learn more about the Tech Academy?"; 
-	//	}
-	//	function dontGiveMePopup()  { /* nothing to return */ }
-	//	$(document).ready(function() {
-	//		$("#coverPic").fadeOut(3000);
-		
-	//		//window.onbeforeunload = GiveMePopup;
-	//		//$("a").click(function(){ window.onbeforeunload = dontGiveMePopup; });
-	//		//$(window).bind("onload", function() {
-				
-	//		//});
-	//	)};
-	//	//});
-			
-			
-	//		//KIND OF WORKS:
-	//		$(window).bind("beforeunload", function() {
-	//			return "This is the other way i know.";
-	//			$('#myModal').modal('show'); //UNFORTUNATELY, THIS DOESN'T PREVENT USER FROM LEAVING THE PAGE, JUST PREVENTS PAGE CLICKS/SCROLL
-	//		});
-	//			alert("Leaving...");
-			
-	//		//IDEAL:
-	//		//	$('#myModal').modal('show');
-				
-	//		});
-	//	});
 	</script>
 </body><iframe src="" style="display: none;"></iframe></html>
