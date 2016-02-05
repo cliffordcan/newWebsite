@@ -203,7 +203,7 @@ h2, h4{
   display: block;
   margin: 0px; /*WAS 10PX AUTO*/
   width: 100%;
-  height: 5%;
+  /*height: 5%;*/
   /*max-width: 853px;*/
   }
   
@@ -354,16 +354,57 @@ blockquote {
    footer .footer_nav {
 	   font-size: 1em;
    }
-   .jumbotron h1 {
+   /*.jumbotron h1 {
 	   font-size: 1.1em;
    }
    .jumbotron, div.row div, div.row.tiles {
 	   margin: 0;
 	   padding-top: 10px;
 	   padding: 0 15px;
+   }*/
+
+ .jumbotron{
+     margin-bottom:-16px;
+     margin-top:-16px; 
+     padding-top: 0px;     
+     padding-bottom: 0px;
    }
-   
-  
+
+
+
+   /* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-right: 50%;
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
 }
 	
 	
@@ -463,8 +504,7 @@ a.btn-lg:active
 }
 
 #coverPic {
-    /*top: 33%;
-    left: 33%;*/
+    top: 16.5%;
     left: 16.5%;
 	width: 66%;
     height: 66%;
