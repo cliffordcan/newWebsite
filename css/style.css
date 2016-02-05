@@ -127,12 +127,13 @@ h2, h4{
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
-  background-color: transparent;
-  margin-top: -65px;
-  margin-bottom: -45px;
-/* background: url(../images/pattern.png); 
-background-size: cover; */ }
+    text-align: center;
+    background-color: transparent;
+    margin-top: -63px;
+    margin-bottom: -69px;
+    /* background: url(../images/pattern.png); 
+    background-size: cover; */ }
+    
   .jumbotron h1 {
     font-size: 2.1em;
 	font-family: 'Titillium Web', sans-serif;
@@ -144,15 +145,22 @@ background-size: cover; */ }
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 .nav-justified {
     background: #fff;
-    box-shadow: 0 10px 15px grey; }
+    box-shadow: 0;/* 10px 15px grey; */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
 
   .nav-justified > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-bottom: 0;
     font-weight: bold;
     color: #777;
-    text-align: center; }
+    text-align: center; 
+
+  }
 
 /*div.row {
   margin-bottom: 10px; } */
@@ -212,6 +220,15 @@ iframe{
   left: 50%;
   bottom: auto;
   width: 50%;*/
+}
+
+.header{
+    background: rgba(45,45,48,1);
+    margin-bottom: 0px;
+    margin-top: -65px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+    vertical-align: 50%;
 }
 
 footer .row {
@@ -445,13 +462,15 @@ a.btn-lg:active
 }
 
 #coverPic {
-	width: 100%;
+    /*top: 33%;
+    left: 33%;*/
+    left: 16.5%;
+	width: 66%;
+    height: 66%;
 	position: absolute;
-	margin: 0 auto;
-	left: 0px;
-	top: 0px;
-	z-index: 1000;	
-	
+	margin: 0px;
+	padding: 0px;
+	z-index: 1000;
 }
 
 .newTiledInfo{
@@ -465,11 +484,13 @@ a.btn-lg:active
     background-color: rgba(45,45,48, 1);
     color:rgba(255,255,255,1);  
     padding: 15px;  
+    margin: 0px;
 }
 
 .newTiledInfoWhite {
     width: 50%;
     padding: 15px;
+    margin: 0px;
 }
 
 .newTiledInfoBlackWithPadding {
