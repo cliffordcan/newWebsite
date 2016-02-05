@@ -9,10 +9,18 @@ body {
   font-size: 1.4em; 
   font-family: 'Titillium Web', sans-serif;
   }
-  
-  h1 {
-	color: #004271;
-  }
+
+h1 {
+    /*color: #004271;*/
+    color: #FFFFFF;
+}
+h3{
+    color: rgba(45,45,48,1);
+    }
+
+h2, h4{
+    color: rgba(255,255,255,1);
+}
 
 .navbar-header button {
   background: #004271; }
@@ -25,6 +33,9 @@ body {
 
 	
 .footer {
+
+  padding-top: 0px;
+  padding-bottom: 40px; 
   font-family: 'Titillium Web', sans-serif;
   }
   
@@ -104,11 +115,22 @@ body {
 	color: white !important;
 }
 
+ .googleplus {
+   display: none !important;
+   }
+   
+ #rights {
+ 	Position: relative;
+ 	float: bottom;
+ }
+
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  margin-top: -45px;
+  margin-top: -65px;
+  margin-bottom: -45px;
 /* background: url(../images/pattern.png); 
 background-size: cover; */ }
   .jumbotron h1 {
@@ -117,12 +139,12 @@ background-size: cover; */ }
     font-style: none;
     color: #004271; }
   .jumbotron .btn {
-    margin-top: 10px; }
+    margin-top: 0px; }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 .nav-justified {
-  background: #fff;
-box-shadow: 0 10px 15px grey; }
+    background: #fff;
+    box-shadow: 0 10px 15px grey; }
 
   .nav-justified > li > a {
     padding-top: 15px;
@@ -155,18 +177,19 @@ box-shadow: 0 10px 15px grey; }
       padding: 10px 0;
       margin: 0; }
     div.row div ul.tiled {
-      list-style-position: inside;
-      margin: 0;
-      padding: 0 0 20px;
-      color: #004271; }
+        list-style-position: inside;
+        margin: 0;
+        padding: 0 0 20px;
+        color: #004271; }
       div.row div ul.tiled li {
         padding-top: 5px; }
 
 #carousel-home {
   display: block;
-  margin: 10px auto;
+  margin: 0px; /*WAS 10PX AUTO*/
   width: 100%;
-  max-width: 853px;
+  height: 5%;
+  /*max-width: 853px;*/
   }
   
 .scholarship{
@@ -175,16 +198,28 @@ box-shadow: 0 10px 15px grey; }
   
 iframe{
 	width: 100%;
-	height: 480px;
-	max-width: 853px;
+	height: 460px;
+	margin: 0px;
+    padding: 0px;
+    max-width: 853px;
 }
 
 .carousel-caption {
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.4); 
+  color: rgba(255,255,255,1);
+  text-align: center;
+  /*top: 25%;
+  left: 50%;
+  bottom: auto;
+  width: 50%;*/
+}
 
 footer .row {
-  background: #eaeaea; 
-  }
+
+    background: rgba(45,45,48,1);
+    color: rgba(255,255,255,1);
+}
+
 
 footer .footer_nav {
   font-size: .8em;
@@ -199,6 +234,7 @@ footer .footer_nav {
   footer .footer_nav li  {
     font-size: 1.2em;
     display: inline-block;
+<<<<<<< HEAD
     padding: 10px;
 }
 
@@ -212,6 +248,12 @@ footer .footer_nav a:hover {
 	color: #D98D2A;
 }
 
+=======
+    padding: 10px; 
+  }
+    footer .footer_nav li:hover {
+      text-decoration: none; }
+>>>>>>> origin/master
 
 body.stories div.row div.img1 {
   background: url(../images/Testimonials%201.png); }
@@ -234,7 +276,9 @@ body.stories div.row div blockquote {
   margin: 150px 10px 10px; }
 
 .contact {
-  background: #eaeaea; }
+    /*background: #eaeaea; }*/
+    background: rgba(45,45,48,1);
+}
 
 .your-class img {
   max-width: 100%; }
@@ -261,7 +305,10 @@ blockquote {
 }
 
 .container {
-    width: 100%;
+    width: 100%; 
+    /*I CHANGED THIS FROM 90% TO 100%*/
+    padding: 0px;
+    margin: 0px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -278,8 +325,9 @@ blockquote {
 	}
 @media (max-width: 768px) {
   body {
-	  padding-top: 50px;
-	  margin-top: 0;
+	  /*padding-top: 50px;*/
+      padding: 0px;
+	  margin-top: 0px;
 	  }
    #first {
 	   padding-top: 0px;
@@ -301,23 +349,140 @@ blockquote {
 }
 	
 	
-	
-	
-	
 .tech_academy {
   height: 75px; }
 
  a.btn-lg {
-	 font-size: 1.4em;
+/*	 font-size: 1.4em;
+     border: hidden;*/
+
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	margin: 20px auto;
+	color: #ccc;
+	background-color: #555;
+	background: -webkit-linear-gradient(#888, #555);
+	background: linear-gradient(#888, #555);
+	border: 0 none;
+	border-radius: 3px;
+	text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+	cursor: pointer;
+    max-width: 275px;
+    width: initial;
  }
+
  
+a.btn-lg:hover, a.btn-lg:focus
+{
+	-webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+	
+@-webkit-keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+		
+@keyframes pulsate
+{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+
+a.btn-lg:active
+{
+	color: #fff;
+	text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
+	box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+	-webkit-transform: translateY(3px);
+	transform: translateY(3px);
+	-webkit-animation: none;
+	animation: none;
+}
+
  
+ #dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #FFF;
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+	display: none;
+	position: fixed;
+	background: #000;
+	border-radius:7px; 
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #666; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#333; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #666; padding:10px; text-align:right; }
+
+.modal-body{
+	height: 200px;
+}
+
 #coverPic {
 	width: 100%;
 	position: absolute;
 	margin: 0 auto;
 	left: 0px;
-	top: 0;
+	top: 0px;
 	z-index: 1000;	
 	
+}
+
+.newTiledInfo{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.newTiledInfoBlack {
+    width: 50%;
+    background-color: rgba(45,45,48, 1);
+    color:rgba(255,255,255,1);  
+    padding: 15px;  
+}
+
+.newTiledInfoWhite {
+    width: 50%;
+    padding: 15px;
+}
+
+.newTiledInfoBlackWithPadding {
+    width: 50%;
+    background-color: rgba(45, 45, 48, 1);
+    color: rgba(255,255,255,1);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.newTiledInfoWhiteWithPadding {
+    width: 50%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.newItemRow{
+    /*padding: 0px;
+    margin: 0px;*/
 }
