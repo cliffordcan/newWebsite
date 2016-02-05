@@ -265,12 +265,11 @@ footer .footer_nav a:hover {
 	color: #D98D2A;
 }
 
-=======
     padding: 10px; 
   }
     footer .footer_nav li:hover {
       text-decoration: none; }
->>>>>>> origin/master
+
 
 body.stories div.row div.img1 {
   background: url(../images/Testimonials%201.png); }
@@ -516,3 +515,12 @@ a.btn-lg:active
     /*padding: 0px;
     margin: 0px;*/
 }
+
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;	
+      animation-duration: 10s;	
+      -webkit-animation-duration: 10s;
+      visibility: visible;			
+  }
