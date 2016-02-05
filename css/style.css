@@ -35,7 +35,7 @@ h2, h4{
 .footer {
 
   padding-top: 0px;
-  padding-bottom: 40px; 
+  padding-bottom: 0px; 
   font-family: 'Titillium Web', sans-serif;
   }
   
@@ -48,9 +48,11 @@ h2, h4{
 	font-size: 0.8em !important;
 	text-align: center !important;
 	width: 100% !important;
-	position: block !important;
+	position: relative !important;
 	float: bottom !important;
 	color: white !important;
+	padding: 0px !important;
+	z-index: 0 !important;
 }
 
 #footSocial{
@@ -59,6 +61,7 @@ h2, h4{
 	height: 100px !important;
 	float: left !important;
 	position: block !important;
+	z-index: 1;
 }
 
 #footSocial a {
@@ -122,6 +125,10 @@ h2, h4{
  #rights {
  	Position: relative;
  	float: bottom;
+ }
+ 
+ #topList {
+	text-align: right !important;
  }
 
 
@@ -251,7 +258,6 @@ footer .footer_nav {
   footer .footer_nav li  {
     font-size: 1.2em;
     display: inline-block;
-<<<<<<< HEAD
     padding: 10px;
 }
 
@@ -265,10 +271,6 @@ footer .footer_nav a:hover {
 	color: #D98D2A;
 }
 
-    padding: 10px; 
-  }
-    footer .footer_nav li:hover {
-      text-decoration: none; }
 
 
 body.stories div.row div.img1 {
@@ -511,10 +513,6 @@ a.btn-lg:active
     
 }
 
-.newItemRow{
-    /*padding: 0px;
-    margin: 0px;*/
-}
 
 .slideanim {visibility:hidden;}
   .slide {
