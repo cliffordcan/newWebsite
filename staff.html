@@ -90,7 +90,7 @@
         
         
         <!-- Start Tiles -->
-        <div class="row tiles"><!-- Start Row 1 -->
+        <div class="row tiles slideanim"><!-- Start Row 1 -->
             <div class="col-lg-6">
                 <img src="images/ERIC_1.jpg" />
                 <p class="lead">Erik Gross<br />Co-Founder</p>
@@ -104,7 +104,7 @@
             </div>
         </div><!-- End Row 1 -->
         
-        <div class="row tiles"><!-- Start Row 2 -->
+        <div class="row tiles slideanim"><!-- Start Row 2 -->
             <div class="col-lg-4">
                 <img src="images/TONY_3.jpg" />
                 <p class="lead">Tony Thach<br />Lead Instructor</p>
@@ -125,7 +125,7 @@
             </div>
         </div><!-- End Row 2 -->
         
-        <div class="row tiles"><!-- Start Row 3 -->
+        <div class="row tiles slideanim"><!-- Start Row 3 -->
             <div class="col-lg-4">
                 <img src="images/KENDRA_1.jpg" />
                 <p class="lead">Kendra<br />Student Care Director</p>
@@ -143,7 +143,7 @@
             </div>
         </div><!-- End Row 3 -->
         
-        <div class="row tiles"><!-- Start Row 4 -->
+        <div class="row tiles slideanim"><!-- Start Row 4 -->
             <div class="col-lg-4">
                 <!--<img src="images/" />-->
                 <p class="lead">Cliff<br />Live Project In-Charge</p>
@@ -162,7 +162,7 @@
             </div>
         </div><!-- End Row 4 -->
         
-        <div class="row tiles"><!-- Start Row 5 -->
+        <div class="row tiles slideanim"><!-- Start Row 5 -->
             <div class="col-lg-4">
                 <img src="images/NANCY_1.jpg" />
                 <p class="lead">Nancy<br />Executive Assistant</p>
@@ -181,7 +181,7 @@
             </div>
         </div><!-- End Row 5 -->
         
-        <div class="row tiles"><!-- Start Row 6 -->
+        <div class="row tiles slideanim"><!-- Start Row 6 -->
             <div class="col-lg-4">
                 <img src="images/MICHAEL_1.jpg" />
                 <p class="lead">Michael<br />Remote Job Placement Director</p>
@@ -271,6 +271,17 @@
             //I left the wait function here so that if you change your mind and decide you want to wait before showing 
             //the modal dialog box, it's as easy as changing the 0 above to a different number, rather than recoding 
             //all of it again.
+            $(window).ready(function () { $(window).scroll() });
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
         });
     </script>
 </body>

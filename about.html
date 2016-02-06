@@ -85,7 +85,7 @@
         
 
         <!-- Start Tiles -->
-        <div class="row tiles text-justify" id="first"><!-- Start Row 1 -->
+        <div class="row tiles text-justify slideanim" id="first"><!-- Start Row 1 -->
             <div class="col-lg-6">
                 <h2 class="text-center">THE TECH ACADEMY</h2>
                 <h3 class="text-center">A NEW APPROACH TO TRAINING IN TECHNOLOGY</h3>
@@ -100,7 +100,7 @@
             </div>   
         </div><!-- End Row 1 -->
         
-        <div class="row text-justify"><!-- Start Row 2 -->
+        <div class="row text-justify slideanim"><!-- Start Row 2 -->
             <div class="col-lg-6">
                 <img src="images/About_2.png" class="img_fit" />
             </div>  
@@ -111,7 +111,7 @@
             </div> 
         </div><!-- End Row 2 -->
         
-        <div class="row text-justify"><!-- Start Row 3 -->
+        <div class="row text-justify slideanim"><!-- Start Row 3 -->
 			<div class="col-lg-6 hidden-md hidden-lg">
                 <img src="images/About_3.png" class="img_fit" />
             </div>   
@@ -123,7 +123,7 @@
                 <img src="images/About_3.png" class="img_fit" />
             </div>   
         </div><!-- End Row 3 -->
-        <div class="row"><!-- Start Row 4 -->
+        <div class="row slideanim"><!-- Start Row 4 -->
             <div class="col-lg-12">
                 <p>Here is a video that covers The Tech Academy and its program in detail:</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/goznrmb5gls" frameborder="0" allowfullscreen></iframe>
@@ -210,6 +210,17 @@
 		    //I left the wait function here so that if you change your mind and decide you want to wait before showing 
 		    //the modal dialog box, it's as easy as changing the 0 above to a different number, rather than recoding 
 		    //all of it again.
+			$(window).ready(function () { $(window).scroll() });
+			$(window).scroll(function () {
+			    $(".slideanim").each(function () {
+			        var pos = $(this).offset().top;
+
+			        var winTop = $(window).scrollTop();
+			        if (pos < winTop + 600) {
+			            $(this).addClass("slide");
+			        }
+			    });
+			});
 		});
 		
 			

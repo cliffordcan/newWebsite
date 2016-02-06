@@ -187,13 +187,13 @@
 				        </div>
                     <!--  End Carousel  -->
                     </td>
-                    <td class="newTiledInfoBlack">
+                    <td class="newTiledInfoBlack slideanim">
                         <p class="lead">Online and in-person computer programming classes with flexible scheduling.</p>
 				        <p>The Tech Academy is a code school located in downtown Portland. They train students in computer programming. Their 15 week Software Developer Boot Camp consists of 15 self-paced web development and software development classes. The program can be done in-person at our campus or taken online from anywhere.</p>
                     </td>
                 </tr>
                 <tr class="newItemRow"><!-- ROW 3 -->
-                    <td class="newTiledInfoBlackWithPadding">
+                    <td class="newTiledInfoBlackWithPadding slideanim">
                         <p class="lead"><strong>LEARN CODING AT THE TECH ACADEMY</strong>
                         <br/>15 WEEK SOFTWARE DEVELOPER BOOT CAMP</p>
                         <p>Through The Tech Academy’s programming bootcamp, students learn coding through real-world, hands-on software development training.</p>
@@ -201,7 +201,7 @@
                         <p>Learn how you can start a new career in software development through our courses</p>
                         <p><a class="btn btn-lg btn-primary" href="contact.html" role="button">Contact Us Now »</a></p>
                     </td>
-                    <td class="newTiledInfoWhiteWithPadding">
+                    <td class="newTiledInfoWhiteWithPadding slideanim">
                         <p>"If you're a motivated individual that truly has a passion for software, regardless of your experience, and you're looking to get paid for your developer skills, I cannot recommend The Tech Academy enough."</p>
                         <p>“Just a few weeks ago I was a transplant in Portland, with no connections, no job, no plans, nothing. Now, I've got a $60,000 a year job with full benefits, working at an amazing company, in a beautiful office in downtown Portland."</p>
                         <!-- <p><a class="btn btn-lg btn-primary" href="testimonials.html#nick" role="button">Read More »</a></p> -->
@@ -279,7 +279,7 @@
 					<a class="fa fa-linkedin" href="https://www.linkedin.com/company/3685017?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A3685017%2Cidx%3A2-3-4%2CtarId%3A1454531536037%2Ctas%3Atech%20acade" target="_blank"id="linkedin"></a>
 				</div>
 				
-				<div id="rights">
+				<div id="rights slideanim">
 					All Rights Reserved <i class="fa fa-copyright fa-lg"></i> 2016 The Tech Academy
 				</div>
 				<!--
@@ -343,6 +343,17 @@
 		    $("header").fadeIn(3000);
 		    $("#coverPic").fadeOut(3000);
 		    $(".text-center").scrollTop(0);
+		    $(window).ready(function () { $(window).scroll() });
+		    $(window).scroll(function () {
+		        $(".slideanim").each(function () {
+		            var pos = $(this).offset().top;
+
+		            var winTop = $(window).scrollTop();
+		            if (pos < winTop + 600) {
+		                $(this).addClass("slide");
+		            }
+		        });
+		    });
 	    });
 	</script>
 </body><iframe src="" style="display: none;"></iframe></html>

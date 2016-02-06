@@ -85,7 +85,7 @@
         <h2>Graduate Success Stories</h2>
 
         <!-- Start Tiles -->
-        <div class="row tiles"><!-- Start Row 1 -->
+        <div class="row tiles slideanim"><!-- Start Row 1 -->
             <a name="cole"></a>
             <div class="col-lg-4 testimonial img1" id="img_1">
                 <blockquote>"Each course is beautifully developed on an incrementing scale of difficulty to fully immerse the student in possible real-world scenarios…”
@@ -103,7 +103,7 @@
             </div>   
         </div><!-- End Row 1 --><hr />
         
-        <div class="row tiles"><!-- Start Row 2 -->
+        <div class="row tiles slideanim"><!-- Start Row 2 -->
             <a name="nick"></a>
             <div class="col-lg-8 text-justify">
                 
@@ -122,7 +122,7 @@
              
         </div><!-- End Row 2 --><hr />
 
-        <div class="row tiles"><!-- Start Row 3 -->
+        <div class="row tiles slideanim"><!-- Start Row 3 -->
             <a name="neil"></a>
             <div class="col-lg-4 testimonial img3" id="img_3">
                 <blockquote>“The curriculum was very comprehensive and I liked that it covered complicated concepts like object oriented programming and databases, and wasn’t 
@@ -136,7 +136,7 @@
             </div>   
         </div><!-- End Row 3 --><hr />
         
-        <div class="row tiles"><!-- Start Row 4 -->
+        <div class="row tiles slideanim"><!-- Start Row 4 -->
             <!--<p class="lead text-center"></p>-->
             <div class="col-lg-8 text-justify">
                 
@@ -151,7 +151,7 @@
              
         </div><!-- End Row 4 -->
 
-        <div class="row tiles"><!-- Start Row 5 -->
+        <div class="row tiles slideanim"><!-- Start Row 5 -->
             <!--<p class="lead text-center"></p>-->
             <div class="col-lg-4 testimonial img5" id="img_6">
                 <blockquote>“I was able to secure a job in software development before graduating.”</blockquote>
@@ -164,7 +164,7 @@
             </div>   
         </div><!-- End Row 5 -->
         
-        <div class="row tiles"><!-- Start Row 6 -->
+        <div class="row tiles slideanim"><!-- Start Row 6 -->
             <!--<p class="lead text-center"></p>-->
             
             <div class="col-lg-8 text-justify">
@@ -178,7 +178,7 @@
             </div>
         </div><!-- End Row 6 -->
         
-        <div class="row tiles"><!-- Start Row 7 -->
+        <div class="row tiles slideanim"><!-- Start Row 7 -->
             <!--<p class="lead text-center"></p>-->
             <div class="col-lg-4 testimonial img7" id="img_5">
                 <blockquote>“I looked at the offerings of several boot camps in the area, and found that the Tech Academy offered the strongest curriculum towards a path in software development.”</blockquote>
@@ -190,7 +190,7 @@
             </div>   
         </div><!-- End Row 7 -->
         
-        <div class="row tiles"><!-- Start Row 8 -->
+        <div class="row tiles slideanim"><!-- Start Row 8 -->
             <div class="col-lg-2">
             </div>
             <div class="col-lg-8">
@@ -285,6 +285,17 @@
 		    //I left the wait function here so that if you change your mind and decide you want to wait before showing 
 		    //the modal dialog box, it's as easy as changing the 0 above to a different number, rather than recoding 
 		    //all of it again.
+			$(window).ready(function () { $(window).scroll() });
+			$(window).scroll(function () {
+			    $(".slideanim").each(function () {
+			        var pos = $(this).offset().top;
+
+			        var winTop = $(window).scrollTop();
+			        if (pos < winTop + 600) {
+			            $(this).addClass("slide");
+			        }
+			    });
+			});
 		});
 		
 			
