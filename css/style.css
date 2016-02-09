@@ -226,7 +226,7 @@ iframe{
     height: 460px;
 	margin: 0px;
     padding: 0px;
-    max-width: 853px;
+    /*max-width: 853px;*/
 }
 
 .carousel-caption {
