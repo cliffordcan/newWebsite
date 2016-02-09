@@ -364,17 +364,18 @@ blockquote {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 960px) {
   /* Remove the padding we set earlier */
-  .masthead,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0; } 
+    .masthead,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0; } 
+    .header{
+        margin-top: -85px;
+    }
+}
 
-	
-	
-	}
 @media (max-width: 768px) {
   body {
 	  /*padding-top: 50px;*/
@@ -397,6 +398,9 @@ blockquote {
 	   padding: 0 15px;
    }*/
 
+   .header{
+       margin-top: -25px;
+   }
  .jumbotron{
      margin-bottom:0px;
      margin-top:0px; 
