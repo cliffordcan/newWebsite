@@ -112,7 +112,7 @@
                         <p>Full-Time & Part-Time Scheduling Options <i class="fa fa-check-square-o"></i></p>
 						
 						</h2>
-						<p><a class="btn btn-primary btn-lg" href="contact.html" role="button">Enroll Today!</a></p>
+						<p><a class="btn btn-primary btn-lg" id="topButton" href="contact.html" role="button">Enroll Today!</a></p>
 					</div>
                 </div>
                 <div class="col-lg-6 newTiledInfoWhite">
@@ -126,7 +126,7 @@
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qfT5ksl8Dug?&"></iframe>
                         </div> -->
                         
-                        <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/qfT5ksl8Dug?&" frameborder="0" allowfullscreen=""></iframe></div>
+                        <div class="flex-video widescreen"><iframe src="https://www.youtube.com/embed/qfT5ksl8Dug?&" id="iframeHomePage" frameborder="0" allowfullscreen=""></iframe></div>
 
 
 
@@ -143,7 +143,7 @@
             <div class="row"><!-- ROW 2 -->
                 <div class="col-lg-6 newTiledInfoWhite">
                     <!--  START CAROUSEL IMAGES  -->
-				    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+				    <div id="carousel-home" class="carousel slide slideanim" data-ride="carousel">
 					    <!--  Indicators  -->
 					    <ol class="carousel-indicators">
 						    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -350,7 +350,8 @@
 		            var pos = $(this).offset().top;
 
 		            var winTop = $(window).scrollTop();
-		            if (pos < winTop + 600) {
+
+		            if (pos < winTop + $(window).height() + 20) {
 		                $(this).addClass("slide");
 		            }
 		        });

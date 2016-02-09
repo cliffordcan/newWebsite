@@ -139,43 +139,52 @@ h2, h4{
 
 /* Main marketing message and sign up button */
 .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    /* background: url(../images/pattern.png); 
-    background-size: cover; */ }
-    
+  text-align: center;
+  background-color: transparent;
+  margin-top: -45px;
+/* background: url(../images/pattern.png); 
+background-size: cover; */ }
   .jumbotron h1 {
     font-size: 2.1em;
 	font-family: 'Titillium Web', sans-serif;
     font-style: none;
     color: #004271; }
   .jumbotron .btn {
-    margin-top: 0px; }
+    margin-top: 10px; }
 
 /* Customize the nav-justified links to be fill the entire space of the .navbar */
 .nav-justified {
-    background: #fff;
+    background: #fff; /*BACKGROUND COLOR OF NAVBAR*/
     box-shadow: 0;/* 10px 15px grey; */
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0;
 }
 
+ul.nav a:hover { 
+    color: #777 !important; /*TEXT COLOR IN NAVBAR ON HOVER*/
+    background-color:  #fff; /*BACKGROUND COLOR OF SELECTION RECTANGLE*/
+}
 
   .nav-justified > li > a {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0;
     font-weight: bold;
-    color: #777;
+    color: #777; /*TEXT COLOR IN NAVBAR*/
     text-align: center; 
 
   }
 
 div.row {
-  margin: 0px; }
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BOUNDARIES*/
+    padding-left: 15px;
+    padding-right: 15px;
+}
   div.row.tiles {
     margin: 0px; }
     div.row.tiles img {
@@ -208,6 +217,16 @@ div.row {
       div.row div ul.tiled li {
         padding-top: 0px; }
 
+.row [class*="col-"].newTiledInfoBlack{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+.row [class*="col-"].newTiledInfoWhite{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+
 #carousel-home {
   display: block;
   margin: 0px; /*WAS 10PX AUTO*/
@@ -219,14 +238,25 @@ div.row {
 .scholarship{
 	color: blue;
 }
-  
-iframe{
+ 
+#iframeHomePage{
+	width: 100%;
+	height: 100%;
+ 	margin: 0px;
+    padding: 0px;
+    height: 460px;
+    margin-bottom: -9px;
+    max-width: 99999999px;
+} 
+
+#iframeOtherPages{
 	width: 100%;
 	height: 100%;
     height: 460px;
 	margin: 0px;
     padding: 0px;
-    /*max-width: 853px;*/
+    align-items: center;
+    max-width: 853px;
 }
 
 .carousel-caption {
@@ -378,42 +408,6 @@ blockquote {
      padding-top: 0px;     
      padding-bottom: 0px;
    }
-
-
-
-   /* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-right: 50%;
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
-
 }
 	
 	
@@ -523,11 +517,11 @@ a.btn-lg:active
 	z-index: 1000;
 }
 
-.newTiledInfo{
+/*.newTiledInfo{
     width: 100%;
     margin: 0px;
     padding: 0px;
-}
+}*/
 
 .newTiledInfoBlack {
     /*width: 50%;*/
@@ -578,8 +572,8 @@ a.btn-lg:active
 
 @keyframes slide {
     0% {
-        opacity: 1;
-        -webkit-transform: translateY(75%);
+        opacity: 0;
+        -webkit-transform: translateY(10%);
     } 
     100% {
         opacity: 1;
@@ -588,8 +582,8 @@ a.btn-lg:active
 }
 @-webkit-keyframes slide {
     0% {
-        opacity: 1;
-        -webkit-transform: translateY(75%);
+        opacity: 0;
+        -webkit-transform: translateY(10%);
     } 
     100% {
         opacity: 1;
