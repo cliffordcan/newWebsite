@@ -132,26 +132,8 @@ h2, h4{
  }
  
  /* CONTACT INFO PAGE_SPECIFIC CSS */
-#contactBody {
-	width: 100%;
-	height:100%;
- }
- 
- #contactInfo {
-	color: white;
-	background-color: rgba(45,45,48,1);
-	width: 50%;
- 	display: block;
-	float: left
- }
- 
- #contactForm {
-	color: rgba(45,45,48,1);
-	width: 50%;
-	display: block;
-	float: left;
- }
 
+ 
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
