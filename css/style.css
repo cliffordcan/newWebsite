@@ -48,20 +48,16 @@ h2, h4{
 	font-size: 0.8em !important;
 	text-align: center !important;
 	width: 100% !important;
-	position: relative !important;
-	float: bottom !important;
 	color: white !important;
-	padding: 0px !important;
-	z-index: 0 !important;
 }
 
 #footSocial{
 	text-align: left !important;
 	width: 66% !important;
-	height: 100px !important;
+	height: 65px !important;
 	float: left !important;
 	position: block !important;
-	z-index: 1;
+	margin-top: 25px;
 }
 
 #footSocial a {
@@ -92,9 +88,10 @@ h2, h4{
 }
 
 #footAddress {
+	margin-left: 1%;
 	text-align: left !important;
 	width: 33% !important;
-	height: 150px !important;
+	height: 75px !important;
 	float: left !important;
 	position: block !important;
 	color: white !important;
@@ -122,10 +119,6 @@ h2, h4{
    display: none !important;
    }
    
- #rights {
- 	Position: relative;
- 	float: bottom;
- }
  
  #topButton{
 	margin-right: 50px !important;
