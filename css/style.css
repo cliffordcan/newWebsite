@@ -184,6 +184,7 @@ div.row {
 div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BOUNDARIES*/
     padding-left: 15px;
     padding-right: 15px;
+
 }
   div.row.tiles {
     margin: 0px; }
@@ -263,10 +264,11 @@ div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BO
   background: rgba(0, 0, 0, 0.4); 
   color: rgba(255,255,255,1);
   text-align: center;
-  /*top: 25%;
+
+  top: 15%;
   left: 50%;
   bottom: auto;
-  width: 50%;*/
+  width: 50%;
 }
 
 .header{
