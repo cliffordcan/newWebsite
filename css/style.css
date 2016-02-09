@@ -11,7 +11,7 @@ body {
   }
 
 .header h1 {
-    /*color: #004271;*/
+    letter-spacing: 4px;
     color: #FFFFFF;
 }
 h3{
@@ -177,14 +177,14 @@ ul.nav a:hover {
   }
 
 div.row {
-  margin: 0px;
+  margin-top: 0px;
   overflow: hidden;
   padding: 0px;
 }
 div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BOUNDARIES*/
     padding-left: 15px;
     padding-right: 15px;
-
+	margin-top: 15px;
 }
   div.row.tiles {
     margin: 0px; }
