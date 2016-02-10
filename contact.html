@@ -121,13 +121,13 @@
         
 			    <!-- Contact Info -->
 			    <div class="col-lg-5 newTiledInfoBlack" id="contactInfo">
-				    <i class="fa fa-envelope fa-4x"></i>
+				    <i class="fa fa-envelope fa-4x slideanim"></i>
 				    <p>info@learncodinganywhere.com</p>
 				    <br />
-				    <i class="fa fa-phone fa-4x"></i>
+				    <i class="fa fa-phone fa-4x slideanim"></i>
 				    <p>503.206.6915</p>
 				    <br />
-				    <i class="fa fa-building fa-4x"></i><br />
+				    <i class="fa fa-building fa-4x slideanim"></i><br />
 				    <p>310 SW 4th Ave Suite 412<br />Portland, OR 97204</p>
 				    <br />
 				    <p>
@@ -201,6 +201,17 @@
 			if (w <657) {
 				$(".form-control").removeAttr("placeholder");
 			}
+			$(window).ready(function () { $(window).scroll() });
+			$(window).scroll(function () {
+			    $(".slideanim").each(function () {
+			        var pos = $(this).offset().top;
+
+			        var winTop = $(window).scrollTop();
+			        if (pos < winTop + 600) {
+			            $(this).addClass("slide");
+			        }
+			    });
+			});
 		});
 		
 			
