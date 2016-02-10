@@ -27,7 +27,7 @@ h2, h4{
 }
 
 .navbar-header button span.icon-bar {
-    background: #fff; 
+    background: #fff;
 }
 
 .dropdown-menu {
@@ -181,7 +181,8 @@ div.row {
 div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BOUNDARIES*/
     padding-left: 15px;
     padding-right: 15px;
-	margin-top: 15px;
+	/*margin-top: 15px; /*THIS WAS THE ROOT CUASE OF GRID ON MOBILE HAVING SPACE BETWEEN SOME ROWS. WE MAY NEED TO SEPERATE OUT MOBILE-VS-DESKTOP ON THIS*/
+    margin-top: 0px;
 }
   div.row.tiles {
     margin: 0px; }
@@ -189,20 +190,22 @@ div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BO
       width: 200px; }
         div.row.tiles img.img_fit {
             width: 100%;
-            height: 100%;
+            /*height: 100%;*/
         }
   div.row img.img_fit {
     width: 100%; 
-    height: 100%;
+    /*height: 100%;*/
   }
   div.row div {
-    padding: 0px;
+    padding: 0px; /*THIS IS CAUSING THE ISSUE WITH TESTIMONIALS PAGE. 0 MAKES HOMEPAGE WORK, BUT TESTIMONIALS PAGE IMAGES CUT OFF. 30 MAKES TESTIMONIALS WORK, BUT BREAKS HOMEPAGE*/
     border-radius: 0px;
     font-size: 1.1em; }
+
     div.row div .btn {
       padding-top: 0px; }
     div.row div.testimonial {
       background-color: #eaeaea;
+      padding: 30px !important;
        }
     div.row div.contact, div.row div .form-group {
       padding: 0px 0;
@@ -261,18 +264,18 @@ div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BO
   background: rgba(0, 0, 0, 0.4); 
   color: rgba(255,255,255,1);
   text-align: center;
-  top: 15%;
-  left: 50%;
+  top: 70%;
   bottom: auto;
-  width: 50%;
 }
+
+.carousel-indicators li { visibility: hidden; }
 
 .header{
     background: rgba(45,45,48,1);
     margin-bottom: 0px;
     margin-top: -65px;
-    padding-top: 15px;
-    padding-bottom: 1px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     vertical-align: 50%;
 }
 
@@ -366,7 +369,7 @@ blockquote {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   /* Remove the padding we set earlier */
     .masthead,
     .marketing,
@@ -374,34 +377,44 @@ blockquote {
         padding-right: 0;
         padding-left: 0; } 
     .header{
-        margin-top: -85px;
+        background: rgba(45,45,48,1);
+        margin-bottom: -20px;
+        margin-top: -65px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        vertical-align: 50%;
     }
 }
 
 @media (max-width: 768px) {
-  body {
-    padding: 0px;
-	margin-top: 0px;
-}
+    body {
+        padding: 0px;
+        margin-top: 0px;
+    }
 	  
-#first {
-	padding-top: 0px;
-}
+    #first {
+        padding-top: 0px;
+    }
    
-footer .footer_nav {
-	   font-size: 1em;
-}
+    footer .footer_nav {
+        font-size: 1em;
+    }
 
-.header{
-       margin-top: -25px;
-}
+    .header{
+        background: rgba(45,45,48,1);
+        margin-bottom: -30px;
+        margin-top: 0px;
+        padding-top: 5px;
+        padding-bottom: 15px;
+        vertical-align: 50%;
+    }
    
- .jumbotron{
-     margin-bottom:0px;
-     margin-top:0px; 
-     padding-top: 0px;     
-     padding-bottom: 0px;
-   }
+    .jumbotron{
+        margin-bottom:0px;
+        margin-top:0px; 
+        padding-top: 0px;     
+        padding-bottom: 0px;
+    }
 }
 	
 	
@@ -422,8 +435,9 @@ footer .footer_nav {
 	font-size: 1.1em;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding: 10px 15px;
-	margin: 20px auto;
+	padding-bottom: 0px;
+	padding-top: 0px;
+    margin: 20px auto;
 	color: #ccc;
 	background-color: #555;
 	background: -webkit-linear-gradient(#888, #555);
@@ -435,6 +449,7 @@ footer .footer_nav {
 	cursor: pointer;
     max-width: 275px;
     width: initial;
+    vertical-align: middle;
  }
 
  
@@ -498,10 +513,10 @@ a.btn-lg:active
 }
 
 #coverPic {
-    top: 16.5%;
+    top: 25%;
     left: 16.5%;
 	width: 66%;
-    height: 66%;
+    
 	position: absolute;
 	margin: 0px;
 	padding: 0px;
@@ -518,6 +533,9 @@ a.btn-lg:active
 
 .newTiledInfoWhite {
     margin: 0px;
+    background-color: rgba(255,255,255, 1);
+    color:rgba(0,0,0,1);  
+
 }
 
 .slideanim {visibility:hidden;}
