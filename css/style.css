@@ -132,6 +132,86 @@ h2, h4{
  }
  
  /* CONTACT INFO PAGE_SPECIFIC CSS */
+ #contactForm  #Email {
+    height: 50px !important;
+    border: 5px solid rgba(45,45,48,1) !important;
+    background: transparent !important;
+    color: rgba(45,45,48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	margin-top: 10px !important;
+
+}
+
+ #contactForm  #Ad {
+    height: 50px !important;
+    border: 5px solid rgba(45,45,48,1) !important;
+    background: transparent !important;
+    color: rgba(45,45,48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+
+}
+
+ #contactForm  #Phone {
+    height: 50px !important;
+    border: 5px solid rgba(45,45,48,1) !important;
+    background: transparent !important;
+    color: rgba(45,45,48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-top: 10px !important;
+
+}
+
+ #contactForm  #Message {
+    height: 100px !important;
+	font-size: 14px;
+    border: 5px solid rgba(45,45,48,1) !important;
+    background: transparent !important;
+    color: rgba(45,45,48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-top: 10px !important;
+
+}
+
+ #contactForm  #Name {
+    height: 50px !important;
+    border: 5px solid rgba(45,45,48,1) !important;
+    background: transparent !important;
+    color: rgba(45,45,48,1) !important;
+    letter-spacing: 1px !important;
+	width: 80% !important;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+	padding: 10px !important;
+	margin-top: 10px !important;
+
+}
+
+ #contactForm  #submitButton {
+    height: 50px !important;
+    border: 5px solid rgba(45,45,48,1) !important;
+    background: transparent !important;
+    color: rgba(45,45,48,1) !important;
+    letter-spacing: 1px !important;
+	padding: 10px !important;
+	margin-top: 10px !important;
+	font-weight: bold;
+}
+ /* END CONTACT INFO PAGE_SPECIFIC CSS */
 
  
 /* Main marketing message and sign up button */
