@@ -49,28 +49,43 @@ h2, h4{
 #rights {
 	font-size: 0.8em !important;
 	text-align: center !important;
-	width: 100% !important;
+	/*width: 100% !important;*/
 	color: white !important;
 }
 
 #footSocial{
-	text-align: left !important;
-	width: 66% !important;
+	/*text-align: left !important;*/
+	width: 100% !important;
+    /*left: 0px !important;*/
+    /*left: 33%;*/
 	height: 65px !important;
-	float: left !important;
-	position: block !important;
+	/*float: left !important;*/
+	/*position: block !important;*/
 	margin-top: 25px;
 }
 
 #footSocial a {
-	margin-left: 75px;
+/*	margin-left: 75px;
 	width: 50px !important;
 	height: 50px !important;
-	text-align: center !important;
+	text-align: center !important;*/
 	color: white !important;
 	display: inline-block !important;
-	font-size: 2em !important;
+	font-size: 2em !important; */
 	text-decoration:none;
+}
+
+#facebook{
+    margin-left: 33% !important;
+}
+#twitter{
+    margin-left: 17% !important;
+}
+#instagram{
+    margin-left: 17% !important;
+}
+#linkedin{
+    margin-left: 17% !important;
 }
 
 #twitter:hover {
@@ -80,6 +95,7 @@ h2, h4{
 #facebook:hover {
 	color: #3b5998 !important;
 }
+
 
 #linkedin:hover {
 	color: #007bb6 !important;
@@ -495,6 +511,49 @@ blockquote {
         padding-top: 0px;     
         padding-bottom: 0px;
     }
+    #footAddress {
+	    margin-left: 1%;
+	    text-align: left !important;
+	    width: 100% !important;
+	    height: 75px !important;
+	    float: left !important;
+	    position: block !important;
+	    color: white !important;
+        margin-bottom: 15px;
+    }
+
+    #footEmail {
+	    text-align: left !important;
+	    width: 100% !important;
+	    height: 50px !important;
+	    float: left !important;
+	    position: block !important;
+	    color: white !important;
+    }
+
+    #footPhone {
+	    text-align: left !important;
+	    width: 100% !important;
+	    height: 50px !important;
+	    float: left !important;
+	    position: block !important;
+	    color: white !important;
+    }
+/*
+    #facebook{
+        margin-left: 0% !important;
+    }
+    #twitter{
+        margin-left: 50% !important;
+    }
+    #instagram{
+        margin-left: 0% !important;
+        margin-top: 25px;
+    }
+    #linkedin{
+        margin-left: 50% !important;
+        margin-top: 25px;
+    }*/
 }
 	
 	
