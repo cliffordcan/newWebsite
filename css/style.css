@@ -77,13 +77,13 @@ h2, h4{
 }
 
 #facebook{
-    margin-left: 25% !important;
+    margin-left: 0% !important;
 }
 #twitter{
     margin-left: 50% !important;
 }
 #instagram{
-    margin-left: 25% !important;
+    margin-left: 0% !important;
 }
 #linkedin{
     margin-left: 50% !important;
@@ -524,6 +524,7 @@ blockquote {
     }
 
     #footEmail {
+        margin-left: 1%;
 	    text-align: left !important;
 	    width: 100% !important;
 	    height: 50px !important;
@@ -533,6 +534,7 @@ blockquote {
     }
 
     #footPhone {
+        margin-left: 1%;
 	    text-align: left !important;
 	    width: 100% !important;
 	    height: 50px !important;
