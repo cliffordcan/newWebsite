@@ -15,7 +15,7 @@ body {
     color: #FFFFFF;
 }
 h3{
-    color: rgba(45,45,48,1);
+    color: rgba(45, 45, 48,1);
     }
 
 h2, h4{
@@ -62,6 +62,7 @@ h2, h4{
 	/*float: left !important;*/
 	/*position: block !important;*/
 	margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 #footSocial a {
@@ -76,16 +77,16 @@ h2, h4{
 }
 
 #facebook{
-    margin-left: 33% !important;
+    margin-left: 25% !important;
 }
 #twitter{
-    margin-left: 17% !important;
+    margin-left: 50% !important;
 }
 #instagram{
-    margin-left: 17% !important;
+    margin-left: 25% !important;
 }
 #linkedin{
-    margin-left: 17% !important;
+    margin-left: 50% !important;
 }
 
 #twitter:hover {
@@ -150,9 +151,9 @@ h2, h4{
  /* CONTACT INFO PAGE_SPECIFIC CSS */
  #contactForm  #Email {
     height: 50px !important;
-    border: 5px solid rgba(45,45,48,1) !important;
+    border: 5px solid rgba(45, 45, 48,1) !important;
     background: transparent !important;
-    color: rgba(45,45,48,1) !important;
+    color: rgba(45, 45, 48,1) !important;
     letter-spacing: 1px !important;
 	width: 80% !important;
 	margin-left: 10% !important;
@@ -163,9 +164,9 @@ h2, h4{
 
  #contactForm  #Ad {
     height: 50px !important;
-    border: 5px solid rgba(45,45,48,1) !important;
+    border: 5px solid rgba(45, 45, 48,1) !important;
     background: transparent !important;
-    color: rgba(45,45,48,1) !important;
+    color: rgba(45, 45, 48,1) !important;
     letter-spacing: 1px !important;
 	width: 80% !important;
 	margin-left: 10% !important;
@@ -176,9 +177,9 @@ h2, h4{
 
  #contactForm  #Phone {
     height: 50px !important;
-    border: 5px solid rgba(45,45,48,1) !important;
+    border: 5px solid rgba(45, 45, 48,1) !important;
     background: transparent !important;
-    color: rgba(45,45,48,1) !important;
+    color: rgba(45, 45, 48,1) !important;
     letter-spacing: 1px !important;
 	width: 80% !important;
 	margin-left: 10% !important;
@@ -191,9 +192,9 @@ h2, h4{
  #contactForm  #Message {
     height: 100px !important;
 	font-size: 14px;
-    border: 5px solid rgba(45,45,48,1) !important;
+    border: 5px solid rgba(45, 45, 48,1) !important;
     background: transparent !important;
-    color: rgba(45,45,48,1) !important;
+    color: rgba(45, 45, 48,1) !important;
     letter-spacing: 1px !important;
 	width: 80% !important;
 	margin-left: 10% !important;
@@ -205,9 +206,9 @@ h2, h4{
 
  #contactForm  #Name {
     height: 50px !important;
-    border: 5px solid rgba(45,45,48,1) !important;
+    border: 5px solid rgba(45, 45, 48,1) !important;
     background: transparent !important;
-    color: rgba(45,45,48,1) !important;
+    color: rgba(45, 45, 48,1) !important;
     letter-spacing: 1px !important;
 	width: 80% !important;
 	margin-left: 10% !important;
@@ -219,9 +220,9 @@ h2, h4{
 
  #contactForm  #submitButton {
     height: 50px !important;
-    border: 5px solid rgba(45,45,48,1) !important;
+    border: 5px solid rgba(45, 45, 48,1) !important;
     background: transparent !important;
-    color: rgba(45,45,48,1) !important;
+    color: rgba(45, 45, 48,1) !important;
     letter-spacing: 1px !important;
 	padding: 10px !important;
 	margin-top: 10px !important;
@@ -367,7 +368,7 @@ div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BO
 .carousel-indicators li { visibility: hidden; }
 
 .header{
-    background: rgba(45,45,48,1);
+    background: rgba(45, 45, 48,1);
     margin-bottom: 0px;
     margin-top: -65px;
     padding-top: 10px;
@@ -377,7 +378,7 @@ div.row p{  /*ADDED 2/9/16 TO GET SPACE BETWEEN THE SIDE OF TEXT AND GRID BOX BO
 
 footer .row {
 
-    background: rgba(45,45,48,1);
+    background: rgba(45, 45, 48,1);
     color: rgba(255,255,255,1);
 }
 
@@ -429,7 +430,7 @@ body.stories div.row div blockquote {
   margin: 150px 10px 10px; }
 
 .contact {
-    background: rgba(45,45,48,1) !important;
+    background: rgba(45, 45, 48,1) !important;
 }
 
 .your-class img {
@@ -473,7 +474,7 @@ blockquote {
         padding-right: 0;
         padding-left: 0; } 
     .header{
-        background: rgba(45,45,48,1);
+        background: rgba(45, 45, 48,1);
         margin-bottom: -20px;
         margin-top: -65px;
         padding-top: 5px;
@@ -497,7 +498,7 @@ blockquote {
     }
 
     .header{
-        background: rgba(45,45,48,1);
+        background: rgba(45, 45, 48,1);
         margin-bottom: -30px;
         margin-top: 0px;
         padding-top: 5px;
@@ -539,7 +540,7 @@ blockquote {
 	    position: block !important;
 	    color: white !important;
     }
-/*
+
     #facebook{
         margin-left: 0% !important;
     }
@@ -548,12 +549,12 @@ blockquote {
     }
     #instagram{
         margin-left: 0% !important;
-        margin-top: 25px;
+        
     }
     #linkedin{
         margin-left: 50% !important;
-        margin-top: 25px;
-    }*/
+        
+    }
 }
 	
 	
@@ -665,7 +666,7 @@ a.btn-lg:active
 
 
 .newTiledInfoBlack {
-    background-color: rgba(45,45,48, 1);
+    background-color: rgba(45, 45, 48, 1);
     color:rgba(255,255,255,1);  
     margin: 0px;
 }
