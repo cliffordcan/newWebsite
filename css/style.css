@@ -483,6 +483,7 @@ blockquote {
     }
 .onlyDisplayOnDesktop{
         visibility: visible;
+        height: inherit !important;
     }
 
 @media screen and (min-width: 1201px) and (max-width: 1365px) {
@@ -492,7 +493,7 @@ blockquote {
 }
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
   /* Remove the padding we set earlier */
     .masthead,
     .marketing,
@@ -528,6 +529,7 @@ blockquote {
     }
     .onlyDisplayOnDesktop{
         visibility: hidden;
+        height: 0px !important;
     }
 }
 
@@ -625,11 +627,21 @@ blockquote {
     .carousel-caption {
         top: 65%; /*PREVENTS TEXT IN THE CAROUSEL FROM GETTING CUTOFF*/
     }
+
+    .carousel-caption > p{
+        font-size: 10px;
+    }
+
+    .carousel-caption > h1{
+        font-size: 15px;
+    }
+
     .onlyDisplayOnMobile{
         visibility: visible;
     }
     .onlyDisplayOnDesktop{
         visibility: hidden;
+        height: 0px !important;
     }
 }
 	
